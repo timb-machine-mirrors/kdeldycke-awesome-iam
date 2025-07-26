@@ -230,8 +230,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [愚蠢的密码规则](https://github.com/dumb-password-rules/dumb-password-rules) - 使用愚蠢的密码规则的糟糕网站。
 
-- [普通文本罪犯](https://plaintextoffenders.com/about/) - 公开羞辱以纯文本存储密码的网站。
-
 - [密码管理器资源](https://github.com/apple/password-manager-resources) - 一个按网站分类的密码规则、更改URL和怪癖的集合。
 
 - [更改密码的著名网址](https://github.com/WICG/change-password-url) - 定义密码更新的网站资源的规范。
@@ -286,8 +284,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [SIM 卡交换恐怖故事](https://www.zdnet.com/article/sim-swap-horror-story-ive-lost-decades-of-data-and-google-wont-lift-a-finger/)
 
-- [AWS 正在逐步弃用基于 SMS 的 2FA](https://aws.amazon.com/iam/details/mfa/) - “我们鼓励您通过 U2F 安全密钥、硬件设备或虚拟（基于软件的）MFA 设备使用 MFA。 您可以在 2019 年 1 月 31 日之前继续使用此功能。”
-
 ## 无密码
 
 - [无密码的争论](https://web.archive.org/web/20190515230752/https://biarity.gitlab.io/2018/02/23/passwordless/) - 密码不是用户身份验证的全部和最终结果。这篇文章试图告诉你为什么。
@@ -308,13 +304,9 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [开始使用安全密钥](https://paulstamatiou.com/getting-started-with-security-keys/) - 使用 FIDO2、WebAuthn 和安全密钥保持在线安全和防止网络钓鱼的实用指南。
 
-- [Solo](https://github.com/solokeys/solo) - 通过 USB + NFC 打开支持 FIDO2 和 U2F 的安全密钥。
-
 - [OpenSK](https://github.com/google/OpenSK) - 用 Rust 编写的安全密钥的开源实现，支持 FIDO U2F 和 FIDO2 标准。
 
 - [YubiKey 指南](https://github.com/drduh/YubiKey-Guide) - 使用 YubiKey 作为存储 GPG 加密、签名和身份验证密钥的智能卡的指南，它也可以用于 SSH。 本文档中的许多原则适用于其他智能卡设备。
-
-- [YubiKey at Datadog](https://github.com/DataDog/yubikey) - Yubikey、U2F、GPG、git、SSH、Keybase、VMware Fusion 和 Docker Content Trust 设置指南。
 
 ### 公钥基础设施
 
@@ -328,7 +320,7 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [CFSSL](https://github.com/cloudflare/cfssl) - CloudFlare 的 PKI/TLS 瑞士军刀。 用于签署、验证和捆绑 TLS 证书的命令行工具和 HTTP API 服务器。
 
-- [JA3](https://github.com/salesforce/ja3) - 创建 SSL/TLS 客户端指纹的方法，应该可以在任何平台上轻松生成，并且可以轻松共享以获取威胁情报。
+- [JA4+](https://github.com/FoxIO-LLC/ja4) - 套网络指纹识别方法，用于促进威胁搜寻和分析。
 
 ### JWT
 
@@ -351,10 +343,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 - [JOSE 是每个人都应该避免的坏标准](https://paragonie.com/blog/2017/03/jwt-json-web-tokens-is-bad-standard-that-everyone-should-avoid) - 这些标准要么是完全破碎的，要么是难以驾驭的复杂雷区。
 
 - [JWT.io](https://jwt.io) - 允许你解码、验证和生成JWT。
-
-- [`loginsrv`](https://github.com/tarent/loginsrv) - 独立的简约登录服务器，为多个登录后端（htpasswd、OSIAM、用户/密码、HTTP 基本身份验证、OAuth2：GitHub、Google、Bitbucket、Facebook、GitLab）提供 JWT 登录。
-
-- [jwtXploiter](https://github.com/DontPanicO/jwtXploiter) - 一个测试 json web token 安全性的工具。
 
 ## 授权
 
@@ -392,8 +380,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [Biscuit](https://www.clever-cloud.com/blog/engineering/2021/04/12/introduction-to-biscuit/) - Biscuit 合并了来自 cookies、JWTs、macaroons 和 Open Policy Agent 的概念。 “它提供了一种基于 Datalog 的逻辑语言来编写授权策略。 它可以存储数据，如 JWT，或像 Macaroons 这样的小条件，但它也能够表示更复杂的规则，如基于角色的访问控制、委托、层次结构。”
 
-- [Oso](https://github.com/osohq/oso) - 一个包含电池的库，用于在您的应用程序中构建授权。
-
 - [Cerbos](https://github.com/cerbos/cerbos) - 用于编写上下文感知访问控制策略的授权端点。
 
 ### ABAC 框架
@@ -412,7 +398,7 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 [基于关系的访问控制（ReBAC）](https://zh.wikipedia.org/wiki/%E5%9F%BA%E4%BA%8E%E5%85%B3%E7%B3%BB%E7%9A%84%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6) 模型是RBAC的更灵活，功能更强大的版本，并且是云系统的首选。
 
-- [Zanzibar：谷歌一致的全球授权系统](https://ai.google/research/pubs/pub48190) - 可扩展到每秒数万亿个访问控制列表和数百万个授权请求，以支持数十亿人使用的服务。 在 3 年的生产使用中，它一直保持低于 10 毫秒的 95% 延迟和高于 99.999% 的可用性。 [论文中没有的其他内容](https://twitter.com/LeaKissner/status/1136626971566149633)。 [Zanzibar Academy](https://zanzibar.academy/) 是一个致力于解释 Zanzibar 运作方式的网站。
+- [Zanzibar：谷歌一致的全球授权系统](https://ai.google/research/pubs/pub48190) - 可扩展到每秒数万亿个访问控制列表和数百万个授权请求，以支持数十亿人使用的服务。 在 3 年的生产使用中，它一直保持低于 10 毫秒的 95% 延迟和高于 99.999% 的可用性。 [论文中没有的其他内容](https://nitter.tiekoetter.com/LeaKissner/status/1136626971566149633)。 [Zanzibar Academy](https://zanzibar.academy/) 是一个致力于解释 Zanzibar 运作方式的网站。
 
 - [SpiceDB](https://github.com/authzed/spicedb) - 一个开源数据库系统，用于管理受 Zanzibar 启发的安全关键应用程序权限。
 
@@ -436,11 +422,7 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [Policy Sentry](https://github.com/salesforce/policy_sentry) - 手动编写具有安全意识的 IAM 策略可能非常乏味且效率低下。 Policy Sentry 可帮助用户在几秒钟内创建最低权限策略。
 
-- [PolicyUniverse](https://github.com/Netflix-Skunkworks/policyuniverse) - 解析和处理 AWS 策略、语句、ARN 和通配符。
-
 - [IAM Floyd](https://github.com/udondan/iam-floyd) - 具有流畅界面的 AWS IAM 策略语句生成器。 通过 IntelliSense 提供条件和 ARN 生成，帮助创建类型安全的 IAM 策略并编写更具限制性/安全的语句。 适用于 Node.js、Python、.Net 和 Java。
-
-- [ConsoleMe](https://github.com/Netflix/consoleme) - 一种适用于 AWS 的自助服务工具，它根据跨多个账户管理权限的授权级别为最终用户和管理员提供登录账户的凭据和控制台访问权限，同时鼓励使用最低权限。
 
 - [IAMbic](https://github.com/noqdev/iambic) - 適用於 IAM 的 GitOps。 Cloud IAM 的 Terraform。 IAMbic 是一個多雲身份和訪問管理 (IAM) 控制平面，可集中和簡化雲訪問和權限。 它在版本控制中維護 IAM 的最終一致、人類可讀的雙向表示。
 
@@ -484,13 +466,13 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [PKCE 的解释](https://www.loginradius.com/blog/engineering/pkce/) - "PKCE 用于为 OAuth 和 OpenID Connect 中的授权代码流提供多一个安全层。"
 
-- [Hydra](https://www.ory.sh/hydra) - 开源 OIDC 和 OAuth2 服务器提供商。
+- [Hydra](https://github.com/ory/hydra) - 开源 OIDC 和 OAuth2 服务器提供商。
 
-- [Keycloak](https://www.keycloak.org) - 开源的身份和访问管理。支持 OIDC、OAuth 2和SAML 2、LDAP 和 AD 目录、密码策略。
+- [Keycloak](https://github.com/keycloak/keycloak) - 开源的身份和访问管理。支持 OIDC、OAuth 2和SAML 2、LDAP 和 AD 目录、密码策略。
 
 - [Casdoor](https://github.com/casbin/casdoor) - 基于 UI 优先的集中式身份验证/单点登录 (SSO) 平台。 支持 OIDC 和 OAuth 2、社交登录、用户管理、基于电子邮件和短信的 2FA。
 
-- [authentik](https://goauthentik.io/) - 类似于 Keycloak 的开源身份提供者。
+- [authentik](https://github.com/goauthentik/authentik) - 类似于 Keycloak 的开源身份提供者。
 
 - [ZITADEL](https://github.com/zitadel/zitadel) - 使用 Go 和 Angular 构建的开源解决方案，用于管理您的所有系统、用户和服务帐户及其角色和外部身份。 ZITADEL 为您提供 OIDC、OAuth 2.0、登录和注册流程、无密码和 MFA 身份验证。 所有这一切都建立在事件溯源之上，并结合 CQRS 来提供出色的审计跟踪。
 
@@ -499,12 +481,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 - [Logto](https://github.com/logto-io/logto) - 为现代应用程序和SaaS产品提供IAM基础设施，支持OIDC、OAuth 2.0、SAML进行身份验证和授权。
 
 - [Authgear](https://github.com/authgear/authgear-server) - 开源身份验证解决方案。它包括服务器，Authui，门户和管理API的代码。
-
-- [Azure Entra ID](https://www.microsoft.com/zh-cn/security/business/identity-access/microsoft-entra-id) - 微软的基于云的身份和访问管理服务，适用于员工和外部合作伙伴。支持 OIDC、OAuth 2.0 和 SAML。
-
-- [Ping Identity](https://www.pingidentity.com) - 支持 OpenID Connect 协议的企业身份和访问管理平台。
-
-- [FusionAuth](https://fusionauth.io/) - 支持 OIDC 的客户身份和访问管理解决方案。
 
 ## SAML
 
@@ -538,7 +514,7 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [Google 内部 KMS 中的高可用性](https://www.youtube.com/watch?v=5T_c-lqgjso) - 不是 GCP 的 KMS，而是其基础架构的核心。 见[幻灯片](https://rwc.iacr.org/2018/Slides/Kanagala.pdf)。
 
-- [HashiCorp Vault](https://www.vaultproject.io) - 保护、存储和严格控制对令牌、密码、证书、加密密钥的访问。
+- [HashiCorp Vault](https://github.com/hashicorp/vault) - 保护、存储和严格控制对令牌、密码、证书、加密密钥的访问。
 
 - [Infisical](https://github.com/Infisical/infisical) - HashiCorp Vault 的替代品。
 
@@ -548,10 +524,6 @@ IAM 的基础：用户、组、角色和权限的定义和生命周期。
 
 - [`truffleHog`](https://github.com/dxa4481/truffleHog) - 在 git 存储库中搜索高熵字符串和秘密，深入挖掘提交历史。
 
-- [Keywhiz](https://square.github.io/keywhiz/) - 一种用于管理和分发机密的系统，可以很好地适应面向服务的体系结构 (SOA)。
-
-- [`roca`](https://github.com/crocs-muni/roca) - 用于检查各种密钥格式的弱 RSA 模块的 Python 模块。
-
 ### 硬件安全模块 (HSM)
 
 HSM 是在硬件层面保证秘密管理安全的物理设备。
@@ -560,9 +532,7 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [AWS Cloud HSM 硬件花絮](https://news.ycombinator.com/item?id=16759383) - AWS CloudHSM Classic 由 SafeNet 的 Luna HSM 提供支持，当前的 CloudHSM 依赖于 Cavium 的 Nitrox，它允许分区的“虚拟 HSM”。
 
-- [CrypTech](https://cryptech.is) - 一个开放的硬件 HSM。
-
-- [Keystone](https://keystone-enclave.org) - 用于基于 RISC-V 架构构建具有安全硬件飞地的可信执行环境 (TEE) 的开源项目。
+- [Keystone](https://github.com/keystone-enclave/keystone) - 用于基于 RISC-V 架构构建具有安全硬件飞地的可信执行环境 (TEE) 的开源项目。
 
 - [Project Oak](https://github.com/project-oak/oak) - 数据安全传输、存储和处理的规范和参考实现。
 
@@ -632,7 +602,7 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [很棒的威胁情报](https://github.com/hslatman/awesome-threat-intelligence) - "威胁情报的简明定义：基于证据的知识，包括背景、机制、指标、影响和可操作的建议，涉及对资产的现有或新出现的威胁或危险，可用于为主体应对该威胁或危险的决策提供信息。"
 
-- [SpiderFoot](https://github.com/smicallef/spiderfoot) - 一个开源的情报（OSINT）自动化工具。它与几乎所有可用的数据源集成，并使用一系列的方法进行数据分析，使这些数据易于浏览。
+- [SpiderFoot](https://github.com/poppopjmp/spiderfoot) - 一个开源的情报（OSINT）自动化工具。它与几乎所有可用的数据源集成，并使用一系列的方法进行数据分析，使这些数据易于浏览。
 
 - [与威胁情报有关的标准](https://www.threat-intelligence.eu/standards/) - 支持威胁情报分析的开放标准、工具和方法。
 
@@ -648,7 +618,7 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [PhoneInfoga](https://github.com/sundowndev/PhoneInfoga) - 扫描电话号码的工具，只使用免费资源。目标是首先收集标准信息，如国家、地区、运营商和任何国际电话号码的线路类型，并有非常好的准确性。然后在搜索引擎上搜索足迹，试图找到网络电话供应商或确定其所有者。
 
-- [易混淆的同音字](https://github.com/vhf/confusable_homoglyphs) - 同音字是一种常见的网络钓鱼伎俩。
+- [易混淆的同音字](https://git.sr.ht/~valhalla/confusable_homoglyphs) - 同音字是一种常见的网络钓鱼伎俩。
 
 ### 验证码
 
@@ -659,6 +629,8 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 - [reCaptcha](https://www.google.com/recaptcha) - 当你的公司没有能力拥有一个专门的团队在互联网规模上打击机器人和垃圾邮件的时候，reCaptcha 仍然是一个有效、经济和快速的解决方案。
 
 - [你（可能）不需要ReCAPTCHA](https://web.archive.org/web/20190611190134/https://kevv.net/you-probably-dont-need-recaptcha/) - 开始时咆哮说该服务是一个隐私的噩梦，在用户界面上也很乏味，然后列出替代方案。
+
+- [Anubis](https://github.com/TecharoHQ/anubis) - 个开源解决方案，用于保护上游资源免受抓取机器人的侵害。
 
 - [Anti-captcha](https://anti-captcha.com) - 验证码的解决服务。
 
@@ -678,21 +650,15 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [`nextdns/metadata`](https://github.com/nextdns/metadata) - 广泛收集安全、隐私和家长控制的清单。
 
-- [公共后缀列表](https://publicsuffix.org) - Mozilla的公共后缀注册处，互联网用户可以（或在历史上可以）直接注册名字。
+- [公共后缀列表](https://github.com/publicsuffix/list) - Mozilla的公共后缀注册处，互联网用户可以（或在历史上可以）直接注册名字。
 
 - [国家IP区块](https://github.com/herrbischoff/country-ip-blocks) - CIDR 国家层面的 IP 数据，直接来自区域互联网注册中心，每小时更新一次。
-
-- [证书透明化子域](https://github.com/internetwache/CT_subdomains) - 每小时更新一次从证书透明度日志中收集的子域列表。
 
 - 子域否认列表: [#1](https://gist.github.com/artgon/5366868), [#2](https://github.com/sandeepshetty/subdomain-blacklist/blob/master/subdomain-blacklist.txt), [#3](https://github.com/nccgroup/typofinder/blob/master/TypoMagic/datasources/subdomains.txt), [#4](https://www.quora.com/How-do-sites-prevent-vanity-URLs-from-colliding-with-future-features)。
 
 - [`common-domain-prefix-suffix-list.tsv`](https://gist.github.com/erikig/826f49442929e9ecfab6d7c481870700) - 前5000个最常见的域名前缀/后缀列表。
 
-- [`hosts-blocklists`](https://github.com/notracking/hosts-blocklists) -没有更多的广告、跟踪和其他虚拟垃圾。
-
 - [`xkeyscorerules100.txt`](https://gist.github.com/sehrgut/324626fa370f044dbca7) - NSA 的 [XKeyscore](https://zh.wikipedia.org/wiki/XKeyscore) 对TOR和其他匿名保存工具的匹配规则。
-
-- [`pyisp`](https://github.com/ActivisionGameScience/pyisp) - IP 到 ISP 的查询库（包括 ASN）。
 
 - [AMF网站封锁名单](https://www.amf-france.org/Epargne-Info-Service/Proteger-son-epargne/Listes-noires) - 法国官方否认与金钱有关的欺诈网站名单。
 
@@ -705,8 +671,6 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 - [临时电子邮件地址域名](https://gist.github.com/adamloving/4401361) - 一次性和临时电子邮件地址的域名列表。用于过滤你的电子邮件列表，以提高打开率（向这些域名发送电子邮件可能不会被打开）。
 
 - [`gman`](https://github.com/benbalter/gman) - "一个红宝石，用于检查一个给定的电子邮件地址或网站的所有者是否在为政府工作（又称验证政府域）。" 在你的用户群中寻找潜在的政府客户的良好资源。
-
-- [`Swot`](https://github.com/leereilly/swot) - 与上述精神相同，但这次是为了标记学术用户。
 
 ### 保留的 ID
 
@@ -724,8 +688,6 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 作为用户数据的守护者，IAM 技术栈中深受隐私尊重的约束。
 
-- [隐私增强技术决策树](https://www.private-ai.com/wp-content/uploads/2021/10/PETs-Decision-Tree.pdf) - 根据数据类型和上下文选择正确工具的流程图。
-
 - [我们喜欢的论文：隐私](https://github.com/papers-we-love/papers-we-love/tree/master/privacy) - 通过设计提供隐私的方案的科学研究集合。
 
 - [我被骗了吗？](https://haveibeenpwned.com) - 数据泄露指数。
@@ -733,8 +695,6 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 - [软件开发人员的自动化安全测试](https://fahrplan.events.ccc.de/camp/2019/Fahrplan/system/event_attachments/attachments/000/003/798/original/security_cccamp.pdf) -第三方依赖项中的已知漏洞允许大多数隐私泄露。 下面介绍如何通过 CI/CD 的方式检测它们。
 
 - [世界各地的电子邮件营销法规](https://github.com/threeheartsdigital/email-marketing-regulations) - 随着世界的联系越来越紧密，电子邮件营销的监管情况也变得越来越复杂。
-
-- [世界上最大的数据泄露和黑客攻击事件](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/) - 不要成为下一个泄露客户数据的公司。
 
 ### 匿名化
 
@@ -746,11 +706,7 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [为什么差异化的隐私是了不起的](https://desfontain.es/privacy/differential-privacy-awesomeness.html) - 解释[差异隐私](https://zh.wikipedia.org/wiki/%E5%B7%AE%E5%88%86%E9%9A%90%E7%A7%81)背后的直觉，这是一个理论框架，允许在不影响保密性的情况下共享聚合数据。参见后续文章[更多细节](https://desfontain.es/privacy/differential-privacy-in-more-detail.html)和[实践方面](https://desfontain.es/privacy/differential-privacy-in-practice.html)。
 
-- [K-匿名性：简介](https://www.privitar.com/listing/k-anonymity-an-introduction) - 一个替代性的匿名隐私模型。
-
 - [Presidio](https://github.com/microsoft/presidio) - 语境感知、可插拔和可定制的数据保护和PII数据匿名化服务，用于文本和图像。
-
-- [Diffix：高实用性数据库匿名化](https://aircloak.com/wp-content/uploads/apf17-aspen.pdf) - Diffix 试图提供匿名化，避免假名化并保持数据质量。[在Aircloak 用 Elixir 编写](https://elixirforum.com/t/aircloak-anonymized-analitycs/10930)，它作为分析师和未修改的实时数据库之间的一个SQL代理。
 
 ### GDPR
 
@@ -761,8 +717,6 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 - [GDPR 开发指南](https://github.com/LINCnil/GDPR-Developer-Guide) - 开发者的最佳实践。
 
 - [GDPR – 开发人员的实用指南](https://techblog.bozho.net/gdpr-practical-guide-developers/) - 上述内容的一页摘要。
-
-- [GDPR 文档](https://github.com/good-lly/gdpr-documents) - 供个人使用的模板，让公司遵守 "数据访问 "要求。
 
 - [GDPR 之后的黑暗模式](https://arxiv.org/pdf/2001.02479.pdf) - 本文表明，由于缺乏 GDPR 法律的执行，黑暗模式和默示同意无处不在。
 
@@ -780,8 +734,6 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 - [转换优化](https://www.nickkolenda.com/conversion-optimization-psychology/#cro-tactic11) - 一组战术，以增加用户完成账户创建漏斗的机会。
 
-- [Trello 用户入职培训](https://growth.design/case-studies/trello-user-onboarding/) - 一个详细的案例研究，很好地介绍了如何改善用户的入职。
-
 - [改善注册/登录用户体验的11个技巧](https://learnui.design/blog/tips-signup-login-ux.html) - 关于登录表格的一些基本提示。
 
 - [不要在登录表格上耍小聪明](http://bradfrost.com/blog/post/dont-get-clever-with-login-forms/) - 创建简单、可链接、可预测的登录表格，并与密码管理器很好地配合。
@@ -798,15 +750,15 @@ HSM 是在硬件层面保证秘密管理安全的物理设备。
 
 一堆资源，以跟踪所有在该领域经营的公司的现状和进展。
 
-- [AWS 安全、身份与合规公告](https://aws.amazon.com/about-aws/whats-new/security_identity_and_compliance/) - 所有添加到 IAM 周边的新功能的来源。
+- [AWS 安全、身份与合规公告](https://aws.amazon.com/new/?whats-new-content-all.sort-by=item.additionalFields.postDateTime&whats-new-content-all.sort-order=desc&awsf.whats-new-categories=marketing-marchitecture%23security-identity-and-compliance) - 所有添加到 IAM 周边的新功能的来源。
 
-- [GCP IAM 发布说明](https://cloud.google.com/iam/docs/release-notes) - Also of note: [身份](https://cloud.google.com/identity/docs/release-notes), [身份平台](https://cloud.google.com/identity-platform/docs/release-notes), [资源管理](https://cloud.google.com/resource-manager/docs/release-notes), [密钥服务/HSM](https://cloud.google.com/kms/docs/release-notes), [访问环境管理器](https://cloud.google.com/access-context-manager/docs/release-notes), [身份感知代理](https://cloud.google.com/iap/docs/release-notes), [数据丢失预防](https://cloud.google.com/dlp/docs/release-notes) and [安全扫描器](https://cloud.google.com/security-scanner/docs/release-notes)。
+- [GCP IAM 发布说明](https://cloud.google.com/iam/docs/release-notes) - Also of note: [身份平台](https://cloud.google.com/identity-platform/docs/release-notes), [资源管理](https://cloud.google.com/resource-manager/docs/release-notes), [密钥服务/HSM](https://cloud.google.com/kms/docs/release-notes), [访问环境管理器](https://cloud.google.com/access-context-manager/docs/release-notes), [身份感知代理](https://cloud.google.com/iap/docs/release-notes), [数据丢失预防](https://cloud.google.com/dlp/docs/release-notes) and [安全扫描器](https://cloud.google.com/security-scanner/docs/release-notes)。
 
 - [非官方的谷歌云平台周报](https://www.gcpweekly.com) - Relevant keywords: [`IAM`](https://www.gcpweekly.com/gcp-resources/tag/iam/) and [`安全`](https://www.gcpweekly.com/gcp-resources/tag/security/)。
 
 - [DigitalOcean 账户变化日志](http://docs.digitalocean.com/release-notes/accounts/) - 关于 DO 的所有最新账户更新。
 
-- [163 项 AWS 服务各用一行解释](https://adayinthelifeof.nl/2020/05/20/aws.html#discovering-aws) -帮助使他们巨大的服务目录变得有意义。本着同样的精神：[AWS 的简单术语](https://netrixllc.com/blog/aws-services-in-simple-terms/) & [通俗易懂的 AWS](https://expeditedsecurity.com/aws-in-plain-english/)。
+- [163 项 AWS 服务各用一行解释](https://adayinthelifeof.nl/2020/05/20/aws.html#discovering-aws) -帮助使他们巨大的服务目录变得有意义。本着同样的精神： [通俗易懂的 AWS](https://expeditedsecurity.com/aws-in-plain-english/)。
 
 - [谷歌云开发者的小抄](https://github.com/gregsramblings/google-cloud-4-words#the-google-cloud-developers-cheat-sheet) - 用4个字或更少描述所有 GCP 产品。
 
