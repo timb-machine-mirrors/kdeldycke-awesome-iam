@@ -70,6 +70,7 @@
 
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
 
+- [Contents](#contents)
 - [概述](#%E6%A6%82%E8%BF%B0)
 - [安全](#%E5%AE%89%E5%85%A8)
 - [账户管理](#%E8%B4%A6%E6%88%B7%E7%AE%A1%E7%90%86)
@@ -115,6 +116,7 @@
 - [竞争分析](#%E7%AB%9E%E4%BA%89%E5%88%86%E6%9E%90)
 - [历史](#%E5%8E%86%E5%8F%B2)
 - [贡献](#%E8%B4%A1%E7%8C%AE)
+- [Footnotes](#footnotes)
 
 <!-- mdformat-toc end -->
 

@@ -70,6 +70,7 @@ This curated [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/
 
 <!-- mdformat-toc start --slug=github --no-anchors --maxlevel=6 --minlevel=2 -->
 
+- [Contents](#contents)
 - [Overview](#overview)
 - [Security](#security)
 - [Account Management](#account-management)
@@ -114,6 +115,8 @@ This curated [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/
 - [UX/UI](#uxui)
 - [Competitive Analysis](#competitive-analysis)
 - [History](#history)
+- [Contributing](#contributing)
+- [Footnotes](#footnotes)
 
 <!-- mdformat-toc end -->
 
